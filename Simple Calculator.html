@@ -55,7 +55,7 @@ button {
     <p id="result">Result will show here</p>
   </div>
 
-  <script src="script.js">
+  <script>
   function calculate(operation) {
   const num1 = parseFloat(document.getElementById("num1").value);
   const num2 = parseFloat(document.getElementById("num2").value);
@@ -79,9 +79,21 @@ button {
         break;
     }
   }
-
-  document.getElementById("result").innerText = "Result: " + result;
+ document.getElementById("result").innerText = "Result: " + result;
 }
+
+document.getElementById("num1").addEventListener("input", () => {
+  document.getElementById("result").innerText = "Result will show here";
+});
+document.getElementById("num2").addEventListener("input", () => {
+  document.getElementById("result").innerText = "Result will show here";
+});
+
+
+
 </script>
 </body>
 </html>
+
+
+  
